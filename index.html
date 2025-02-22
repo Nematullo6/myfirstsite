@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valyuta Konvertor & Kalkulyator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="shortcut icon" href="Рисунок1.png" type="png">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="social-links" >
+      <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300"><i class="fa-brands fa-github" style="margin-left: 539px;"></i></a>
+      <a href="https://www.instagram.com/?next=%2F" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1400"><i class="fa-brands fa-instagram" style="margin-left: 480px;"></i></a>
+      <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500"><i class="fa-brands fa-telegram" style="margin-left: 420px;"></i></a>
+      <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1600"><i class="fa-brands fa-youtube"></i></a>
+  </div>
+          <ul class="nav-links">
+              <li><a href="home.html">Bosh sahifa</a></li>
+              <li><a href="index.html" style="color: #ffdd57;;">Kalkulyator va Konvertor</a></li>
+              <li><a href="speed.html">Tez yozish mashqi</a></li>
+              <li><a href="registr.html">Registratsiya</a></li>
+          </ul>
+          <div class="hamburger">&#9776;</div>
+      </nav>
+  
+      <div class="container">
+  
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init({offset:0});
+      </script>
+    <div class="container">
+
+        <!-- Valyuta Konvertor -->
+        <div class="converter">
+            <h2>Dollardan So‘mga Konvertor</h2>
+            <input type="number" id="in" placeholder="USD">
+            <button onclick="convertCurrency()">Hisoblash</button>
+            <p id="result">UZS: 0</p>
+        </div>
+
+        <!-- Kalkulyator -->
+        <div class="calculator">
+            <h2>Kalkulyator</h2>
+            <input type="text" class="calculator-screen" id="screen" disabled />
+            <div class="calculator-buttons">
+                <button class="clear" onclick="clearScreen()">C</button>
+                <button onclick="appendValue('(')">(</button>
+                <button onclick="appendValue(')')">)</button>
+                <button class="operator" onclick="appendValue('/')">÷</button>
+
+                <button onclick="appendValue('7')">7</button>
+                <button onclick="appendValue('8')">8</button>
+                <button onclick="appendValue('9')">9</button>
+                <button class="operator" onclick="appendValue('*')">×</button>
+
+                <button onclick="appendValue('4')">4</button>
+                <button onclick="appendValue('5')">5</button>
+                <button onclick="appendValue('6')">6</button>
+                <button class="operator" onclick="appendValue('-')">−</button>
+
+                <button onclick="appendValue('1')">1</button>
+                <button onclick="appendValue('2')">2</button>
+                <button onclick="appendValue('3')">3</button>
+                <button class="operator" onclick="appendValue('+')">+</button>
+
+                <button onclick="appendValue('0')">0</button>
+                <button onclick="appendValue('.')">.</button>
+                <button class="equal-sign" onclick="calculate()">=</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

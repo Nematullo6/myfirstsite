@@ -20,7 +20,8 @@
 }
 
 .nav-links li {
-    margin: 0 15px;
+    margin: 0 5px;
+    
 }
 
 .nav-links a {
@@ -28,6 +29,7 @@
     color: white;
     font-size: 18px;
     transition: 0.3s;
+    margin-left: 100px;
 }
 
 .nav-links a:hover {
@@ -47,9 +49,9 @@
     width: 2.7rem;
     height: 2.7rem;
     background-color: transparent;
-    border: 0.2rem solid #444444;
+    border: 0.2rem solid #ffffff;
     border-radius: 50%;
-    color: #000000;
+    color: #f9f7f7;
     margin: -19px 595px;
     position: absolute;
     font-size: 1.5rem;
